@@ -75,7 +75,7 @@ main{
 }
 
 .content{
-  width: 90%;
+  width: 100%;
   margin:auto;
 }
 
@@ -136,20 +136,119 @@ nav .icon-menu{
   height: 23px;
 }
 
-.caja-busqueda{
+/* maquetando main */
+.logo-google{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+.logo-google a img{
+  width: 273px;
+}
+
+
+.caja-busqueda,.botones{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2em;
+
   /* background-color: #fff; */
   
+}
+.caja-busqueda i, input{
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.caja-busqueda > div{
+  background-color: aqua;
+}
+
+.botones button{
+  margin:0 1em;
 }
 
 .bg-box-busqueda{
   display: flex;
-  background-color: #fff;
-  height: 2em;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  
 }
 
 .bg-box-busqueda input{
   background-color: transparent;
+  width: 584px;
+  height: 48  px;
+}
+form{
+  padding: 0;
+  border:#999 1px solid;
+  box-shadow: #e3e3e3 5px 5px 9px 0px;
+  padding: .5em;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    /* color: -internal-light-dark-color(black, white); */
+    color: #fff;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    /* background-color: -internal-light-dark-color(white, black); */
+    background-color: transparent;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    /* border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial; */
+}
+
+
+/* stylos del footer */
+footer{
+  width: 100%;
+  
+}
+
+footer .barra{
+  width: 90%;
+  height: 2em;
+
+}
+
+footer .left, .right{
+  width: 50%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+}
+
+.left{
+  justify-content: flex-start;
+}
+.right{
+  justify-content: flex-end;
+}
+
+footer > ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
