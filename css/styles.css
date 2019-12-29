@@ -62,40 +62,105 @@ body {
 
 /* Personalizando */
 header, main, footer{
+  display: flex;
   width: 100%;
+  
 }
-header{
+main{
   background-color: coral;
+  margin-top: 5em;
 }
 
 .content{
   width: 90%;
+  margin:auto;
+  background-color: red;
 }
 
 nav {
+  font-size: 0.85em;;
   width: 100%;
-  height: 2em;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
-  flex-direction: ;
-  background-color: bisque;
+  align-items: center;
 }
 
-nav ul, #avatar{
-  width: 100%;
-  text-align: center;
+nav ul{
   display: flex;
-  flex-direction: space-around;
-  margin-left: 1em;
-  height: 2em;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0 1em;
+  margin-right: 2em;
+  width:200px;
   background-color: aqua;
 }
+nav ul li{
+  display: flex;
+  justify-content: center;
+  padding: 0 3em;
+  vertical-align: center;
+  padding: 0;
+  margin-right:;
+  background-color: red;
+}
+nav ul li a{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  background-color: yellow;
+}
+a:hover{
+    text-decoration: underline;
+    /* text-decoration: none; */
+}
 
-
-
-
-#avatar img{
+nav .redon-img{
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
   border-radius: 50%;
+}
+nav .avatar{
+  width: auto;
+  height: 100%;
+  margin-left: 0%;
+  
+}
+
+header li {
+  
+}
+
+
+main img{
+  width: 20%;
+}
+
+main form img{
   width: 10%;
-  height: 10%;
+}
+
+.caja-busqueda{
+ 
+  margin-top: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
+  
+}
+
+.bg-box-busqueda{
+  display: flex;
+  background-color: #fff;
+  height: 2em;
+}
+
+.bg-box-busqueda input{
+  background-color: transparent;
 }
