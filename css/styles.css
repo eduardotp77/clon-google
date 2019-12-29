@@ -17,7 +17,10 @@ img {
     max-width: 100%;
     vertical-align: bottom;
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+}
 li {
     list-style: none;
 }
@@ -25,6 +28,7 @@ li {
 a {
     text-decoration: none;
     color: #333;
+    cursor: pointer;
 }
 
 a:focus {
@@ -53,34 +57,34 @@ main {
 }
 
 body {
-    font-family: product sans;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: normal;
     background-color: #fff;
-    color: #222;
+    color:#777;
 }
 
 /* Personalizando */
 header, main, footer{
-  display: flex;
+
   width: 100%;
   
 }
 main{
-  background-color: coral;
   margin-top: 5em;
 }
 
 .content{
   width: 90%;
   margin:auto;
-  background-color: red;
 }
 
 nav {
-  font-size: 0.85em;;
+  font-family: product sans;
+  font-size: 14px;
   width: 100%;
-  height: 100%;
+  margin-top: .5em;
+  height: 2.5em;;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -89,65 +93,50 @@ nav {
 nav ul{
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  height: 100%;
-  padding: 0 1em;
-  margin-right: 2em;
-  width:200px;
-  background-color: aqua;
+  height: auto;
+  /* margin-right: 30px;
+  width:250px; */
+
+  
 }
 nav ul li{
   display: flex;
   justify-content: center;
-  padding: 0 3em;
-  vertical-align: center;
+  align-items: center;
   padding: 0;
-  margin-right:;
-  background-color: red;
+  cursor: pointer;
+
 }
-nav ul li a{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 0;
-  background-color: yellow;
+nav ul li{
+  margin-right: 16px;
 }
 a:hover{
     text-decoration: underline;
-    /* text-decoration: none; */
+    color:#262626;
 }
 
-nav .redon-img{
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
+nav .icon-menu{
+  background-image: url(../img/iconos/apps-24px.svg);
+}
+
+nav .foto{
+  background-image:url(https://lh3.googleusercontent.com/-8q-mPB8okto/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rfWEDqpkIQiOv6FK_QErDHn7bZIYw.CMID/s32-c/photo.jpg);
   border-radius: 50%;
 }
-nav .avatar{
-  width: auto;
-  height: 100%;
-  margin-left: 0%;
-  
+nav .icon-menu,.foto{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
 }
 
-header li {
-  
-}
-
-
-main img{
-  width: 20%;
-}
-
-main form img{
-  width: 10%;
+nav .icon-menu{
+  width: 23px;
+  height: 23px;
 }
 
 .caja-busqueda{
- 
-  margin-top: 10em;
   display: flex;
   align-items: center;
   justify-content: center;
